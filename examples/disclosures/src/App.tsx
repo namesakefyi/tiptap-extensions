@@ -1,4 +1,4 @@
-import { Disclosures, Disclosure, DisclosureTitle, DisclosureContent } from '../../../';
+import { Disclosures, Disclosure, DisclosureTitle, DisclosureContent } from '@namesakefyi/tiptap-extensions';
 import { EditorProvider, useCurrentEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import './App.css';

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@namesakefyi/tiptap-extensions':
+        specifier: file:../../
+        version: file:../..(@tiptap/core@2.11.7(@tiptap/pm@2.11.7))
       '@tiptap/extension-document':
         specifier: ^2.11.7
         version: 2.11.7(@tiptap/core@2.11.7(@tiptap/pm@2.11.7))
@@ -29,9 +32,6 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
-      tiptap-disclosure:
-        specifier: file:../../
-        version: file:../..(@tiptap/core@2.11.7(@tiptap/pm@2.11.7))
     devDependencies:
       '@eslint/js':
         specifier: ^9.22.0
@@ -381,6 +381,11 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
+
+  '@namesakefyi/tiptap-extensions@file:../..':
+    resolution: {directory: ../.., type: directory}
+    peerDependencies:
+      '@tiptap/core': ^2.11.7
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1259,11 +1264,6 @@ packages:
   tippy.js@6.3.7:
     resolution: {integrity: sha512-E1d3oP2emgJ9dRQZdf3Kkn0qJgI6ZLpyS5z6ZkY1DF3kaQaBsGZsndEpHwx+eC+tYM41HaSNvNtLx8tU57FzTQ==}
 
-  tiptap-disclosure@file:../..:
-    resolution: {directory: ../.., type: directory}
-    peerDependencies:
-      '@tiptap/core': ^2.11.7
-
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
@@ -1635,6 +1635,10 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  '@namesakefyi/tiptap-extensions@file:../..(@tiptap/core@2.11.7(@tiptap/pm@2.11.7))':
+    dependencies:
+      '@tiptap/core': 2.11.7(@tiptap/pm@2.11.7)
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -2570,10 +2574,6 @@ snapshots:
   tippy.js@6.3.7:
     dependencies:
       '@popperjs/core': 2.11.8
-
-  tiptap-disclosure@file:../..(@tiptap/core@2.11.7(@tiptap/pm@2.11.7)):
-    dependencies:
-      '@tiptap/core': 2.11.7(@tiptap/pm@2.11.7)
 
   to-regex-range@5.0.1:
     dependencies:
