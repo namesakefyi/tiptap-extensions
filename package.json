@@ -38,12 +38,12 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@changesets/cli": "^2.29.1",
-    "@tiptap/core": "^2.11.7",
+    "@tiptap/core": "^2.11.9",
     "@tiptap/extension-document": "^2.11.7",
     "@tiptap/pm": "^2.11.7",
     "@tiptap/starter-kit": "^2.11.7",
     "@vitest/coverage-v8": "^3.1.1",
-    "esbuild": "^0.25.2",
+    "esbuild": "^0.25.3",
     "husky": "^9.1.7",
     "jsdom": "^26.1.0",
     "tsup": "^8.4.0",
@@ -51,7 +51,7 @@
     "vitest": "^3.1.1"
   },
   "peerDependencies": {
-    "@tiptap/core": "^2.11.7"
+    "@tiptap/core": "^2.11.9"
   },
   "repository": {
     "type": "git",
