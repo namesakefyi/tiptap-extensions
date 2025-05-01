@@ -4,14 +4,14 @@ import { findChildren } from "@tiptap/core";
 import Document from "@tiptap/extension-document";
 import StarterKit from "@tiptap/starter-kit";
 import {
+  Disclosure,
+  DisclosureContent,
+  DisclosureTitle,
+  Disclosures,
   StepContent,
   StepItem,
   StepTitle,
   Steps,
-  Disclosures,
-  Disclosure,
-  DisclosureTitle,
-  DisclosureContent,
 } from "../src";
 
 export const findNodesByType = (editor: Editor, nodeType: string) => {
