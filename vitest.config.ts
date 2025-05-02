@@ -11,7 +11,7 @@ export default defineConfig({
       include: ["src/**"],
       thresholds: {
         lines: 95,
-        branches: 75,
+        branches: 80,
         functions: 95,
         statements: 95,
       },

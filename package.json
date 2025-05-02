@@ -1,5 +1,5 @@
 {
-  "name": "@namesakefyi/tiptap-extensions",
+  "name": "@namesake/tiptap-extensions",
   "version": "0.0.1",
   "description": "Extensions for Tiptap",
   "main": "dist/index.js",
