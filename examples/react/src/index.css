@@ -10,6 +10,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

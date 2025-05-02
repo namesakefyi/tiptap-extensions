@@ -99,7 +99,7 @@ function DisclosuresExample() {
 
   return (
     <div>
-      <h1>Tiptap Disclosure Demo</h1>
+      <h2>Disclosures</h2>
       <EditorProvider
         slotBefore={<MenuBar />}
         extensions={extensions}

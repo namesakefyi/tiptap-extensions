@@ -117,7 +117,7 @@ function StepsExample() {
 
   return (
     <div>
-      <h1>Tiptap Steps Demo</h1>
+      <h2>Steps</h2>
       <EditorProvider
         slotBefore={<MenuBar />}
         extensions={extensions}
