@@ -2,6 +2,8 @@
 
 A collection of extensions for [Tiptap](https://tiptap.dev/), including step-by-step guides and disclosures.
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/namesakefyi/tiptap-extensions/tree/main/examples/react?file=src%2FApp.tsx&title=Tiptap%Extensions%20Demo)
+
 ![NPM Badge](https://img.shields.io/npm/v/@namesake/tiptap-extensions) [![CI](https://github.com/namesakefyi/tiptap-extensions/actions/workflows/test.yml/badge.svg)](https://github.com/namesakefyi/tiptap-extensions/actions/workflows/test.yml)
 
 ## Getting Started
@@ -13,8 +15,6 @@ npm install @namesake/tiptap-extensions
 ```
 
 ## `Steps`
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/namesakefyi/tiptap-extensions/tree/main/examples/steps?file=src%2FApp.tsx&title=Tiptap%Steps%20Demo)
 
 There are four required components for steps:
 
@@ -205,8 +205,6 @@ editor.chain().focus().toggleSteps().run()
 ```
 
 ## `Disclosures`
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/namesakefyi/tiptap-extensions/tree/main/examples/disclosures?file=src%2FApp.tsx&title=Tiptap%Disclosures%20Demo)
 
 There are four required components for disclosures:
 

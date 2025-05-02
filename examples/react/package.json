@@ -13,11 +13,11 @@
 	},
 	"dependencies": {
 		"@namesakefyi/tiptap-extensions": "file:../../",
-		"@tiptap/extension-document": "^2.11.7",
-		"@tiptap/extension-placeholder": "^2.11.7",
-		"@tiptap/pm": "^2.11.7",
-		"@tiptap/react": "^2.11.7",
-		"@tiptap/starter-kit": "^2.11.7",
+		"@tiptap/extension-document": "^2.11.9",
+		"@tiptap/extension-placeholder": "^2.11.9",
+		"@tiptap/pm": "^2.11.9",
+		"@tiptap/react": "^2.11.9",
+		"@tiptap/starter-kit": "^2.11.9",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0"
 	},
