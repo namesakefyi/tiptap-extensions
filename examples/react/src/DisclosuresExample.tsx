@@ -65,37 +65,24 @@ function DisclosuresExample() {
   const content = `
     <aside data-type="disclosures">
       <details data-type="disclosure">
-        <summary data-type="disclosure-title">Step one</summary>
+        <summary data-type="disclosure-title">What… is your name?</summary>
         <div data-type="disclosure-content">
-          <p>Pick a focus word, short phrase, or prayer that is firmly rooted in your belief system.</p>
+          <p>My name is Sir Lancelot of Camelot.</p>
         </div>
       </details>
       <details data-type="disclosure">
-        <summary data-type="disclosure-title">Step two</summary>
+        <summary data-type="disclosure-title">What… is your quest?</summary>
         <div data-type="disclosure-content">
-          <p>Sit quietly in a comfortable position.</p>
+          <p>To seek the Holy Grail.</p>
         </div>
       </details>
       <details data-type="disclosure">
-        <summary data-type="disclosure-title">Step three</summary>
+        <summary data-type="disclosure-title">What… is your favourite color?</summary>
         <div data-type="disclosure-content">
-          <p>Close your eyes.</p>
+          <p>Blue.</p>
         </div>
       </details>
-      <details data-type="disclosure">
-        <summary data-type="disclosure-title">Step four</summary>
-        <div data-type="disclosure-content">
-          <p>Relax your muscles, progressing from your feet to your calves, thighs, abdomen, shoulders, head, and neck.</p>
-        </div>
-      </details>
-      <details data-type="disclosure">
-        <summary data-type="disclosure-title">Step five</summary>
-        <div data-type="disclosure-content">
-          <p>Breathe slowly and naturally, and as you do, say your focus word, sound phrase, or prayer silently to yourself as you exhale.</p>
-        </div>
-      </details>
-    </aside>
-    <p>&mdash; From <em>The Relaxation Response</em> by Herbert Benson</p>`;
+    </aside>`;
 
   return (
     <div>
