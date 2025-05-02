@@ -38,6 +38,12 @@ h1 {
   margin-block-start: unset;
 }
 
+h2 {
+  font-size: 2em;
+  line-height: 1.1;
+  margin-block-start: unset;
+}
+
 p {
   margin: 0;
 }
