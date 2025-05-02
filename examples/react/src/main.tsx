@@ -1,10 +1,12 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import App from './App.tsx';
+import StepsExample from './StepsExample.tsx';
+import DisclosuresExample from './DisclosuresExample.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <StepsExample />
+    <DisclosuresExample />
   </StrictMode>
 );

@@ -4,46 +4,8 @@ import {
   findParentNode,
   mergeAttributes,
 } from "@tiptap/core";
-import type { Transaction } from "@tiptap/pm/state";
 import { TextSelection } from "@tiptap/pm/state";
-import { canJoin } from "@tiptap/pm/transform";
-
-// https://github.com/ueberdosis/tiptap/blob/develop/packages/core/src/commands/toggleList.ts
-const joinListBackwards = (tr: Transaction): boolean => {
-  const steps = findParentNode((node) => node.type.name === "steps")(
-    tr.selection,
-  );
-  if (!steps) return true;
-
-  const before = tr.doc.resolve(Math.max(0, steps.pos - 1)).before(steps.depth);
-  if (before === undefined) return true;
-
-  const nodeBefore = tr.doc.nodeAt(before);
-  const canJoinBackwards =
-    steps.node.type === nodeBefore?.type && canJoin(tr.doc, steps.pos);
-  if (!canJoinBackwards) return true;
-
-  tr.join(steps.pos);
-  return true;
-};
-
-const joinListForwards = (tr: Transaction): boolean => {
-  const steps = findParentNode((node) => node.type.name === "steps")(
-    tr.selection,
-  );
-  if (!steps) return true;
-
-  const after = tr.doc.resolve(steps.start).after(steps.depth);
-  if (after === undefined) return true;
-
-  const nodeAfter = tr.doc.nodeAt(after);
-  const canJoinForwards =
-    steps.node.type === nodeAfter?.type && canJoin(tr.doc, after);
-  if (!canJoinForwards) return true;
-
-  tr.join(after);
-  return true;
-};
+import { joinListBackwards, joinListForwards } from "../helpers";
 
 export interface StepItemOptions {
   HTMLAttributes: Record<string, any>;
@@ -182,8 +144,8 @@ export const StepItem = Node.create<StepItemOptions>({
               );
 
               // Join lists if needed
-              joinListBackwards(tr);
-              joinListForwards(tr);
+              joinListBackwards(tr, "steps");
+              joinListForwards(tr, "steps");
 
               // Set selection
               tr.setSelection(TextSelection.create(tr.doc, positionToFocus));
@@ -270,8 +232,8 @@ export const StepItem = Node.create<StepItemOptions>({
               }
 
               // Join lists if needed
-              joinListBackwards(tr);
-              joinListForwards(tr);
+              joinListBackwards(tr, "steps");
+              joinListForwards(tr, "steps");
 
               // Set selection
               tr.setSelection(TextSelection.create(tr.doc, positionToFocus));
