@@ -4,7 +4,7 @@ import StarterKit from '@tiptap/starter-kit';
 import './App.css';
 import { useState } from 'react';
 
-function App() {
+function DisclosuresExample() {
   const MenuBar = () => {
     const { editor } = useCurrentEditor();
     const [isEditing, setIsEditing] = useState(editor?.isEditable);
@@ -109,4 +109,4 @@ function App() {
   );
 }
 
-export default App;
+export default DisclosuresExample;

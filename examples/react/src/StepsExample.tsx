@@ -5,7 +5,7 @@ import Placeholder from '@tiptap/extension-placeholder';
 import StarterKit from '@tiptap/starter-kit';
 import './App.css';
 
-function App() {
+function StepsExample() {
   const MenuBar = () => {
     const { editor } = useCurrentEditor();
 
@@ -127,4 +127,4 @@ function App() {
   );
 }
 
-export default App;
+export default StepsExample;
