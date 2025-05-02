@@ -2,14 +2,14 @@
 
 A collection of extensions for [Tiptap](https://tiptap.dev/), including step-by-step guides and disclosures.
 
-![NPM Badge](https://img.shields.io/npm/v/@namesakefyi/tiptap-extensions) [![CI](https://github.com/namesakefyi/tiptap-extensions/actions/workflows/test.yml/badge.svg)](https://github.com/namesakefyi/tiptap-extensions/actions/workflows/test.yml)
+![NPM Badge](https://img.shields.io/npm/v/@namesake/tiptap-extensions) [![CI](https://github.com/namesakefyi/tiptap-extensions/actions/workflows/test.yml/badge.svg)](https://github.com/namesakefyi/tiptap-extensions/actions/workflows/test.yml)
 
 ## Getting Started
 
 ### Installation
 
 ```zsh
-npm install @namesakefyi/tiptap-extensions
+npm install @namesake/tiptap-extensions
 ```
 
 ## `Steps`
@@ -28,7 +28,7 @@ In order to insert and use steps, one or more nodes within your document need to
 ```tsx
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
-import { Steps, StepItem, StepTitle, StepContent } from "@namesakefyi/tiptap-extensions";
+import { Steps, StepItem, StepTitle, StepContent } from "@namesake/tiptap-extensions";
 import Document from "@tiptap/extension-document";
 
 const Editor = () => {
@@ -218,7 +218,7 @@ There are four required components for disclosures:
 ```tsx
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
-import { Disclosures, Disclosure, DisclosureTitle, DisclosureContent } from "@namesakefyi/tiptap-extensions";
+import { Disclosures, Disclosure, DisclosureTitle, DisclosureContent } from "@namesake/tiptap-extensions";
 import Document from "@tiptap/extension-document";
 
 const Editor = () => {
