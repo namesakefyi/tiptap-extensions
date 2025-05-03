@@ -8,7 +8,7 @@ export default defineConfig({
   shims: true,
   skipNodeModulesBundle: true,
   clean: true,
-  minify: false,
+  minify: true,
   sourcemap: true,
   external: ["@tiptap/*", ...Object.keys(pkg.peerDependencies)],
 });

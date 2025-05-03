@@ -12,13 +12,7 @@ export const DisclosuresKit = Extension.create({
   name: "disclosuresKit",
 
   addExtensions() {
-    const extensions = [
-      Disclosures,
-      Disclosure,
-      DisclosureTitle,
-      DisclosureContent,
-    ];
-    return extensions;
+    return [Disclosures, Disclosure, DisclosureTitle, DisclosureContent];
   },
 });
 
@@ -26,7 +20,15 @@ export const StepsKit = Extension.create({
   name: "stepsKit",
 
   addExtensions() {
-    const extensions = [Steps, StepItem, StepTitle, StepContent];
-    return extensions;
+    return [Steps, StepItem, StepTitle, StepContent];
   },
 });
+
+export * from "./disclosures/disclosures";
+export * from "./disclosures/disclosure";
+export * from "./disclosures/disclosure-content";
+export * from "./disclosures/disclosure-title";
+export * from "./steps/step-content";
+export * from "./steps/step-item";
+export * from "./steps/step-title";
+export * from "./steps/steps";
