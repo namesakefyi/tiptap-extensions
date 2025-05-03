@@ -1,12 +1,12 @@
-import { Disclosures } from "./disclosures/disclosures";
+import { Extension } from "@tiptap/core";
 import { Disclosure } from "./disclosures/disclosure";
-import { DisclosureTitle } from "./disclosures/disclosure-title";
 import { DisclosureContent } from "./disclosures/disclosure-content";
-import { Steps } from "./steps/steps";
+import { DisclosureTitle } from "./disclosures/disclosure-title";
+import { Disclosures } from "./disclosures/disclosures";
+import { StepContent } from "./steps/step-content";
 import { StepItem } from "./steps/step-item";
 import { StepTitle } from "./steps/step-title";
-import { StepContent } from "./steps/step-content";
-import { Extension } from "@tiptap/core";
+import { Steps } from "./steps/steps";
 
 export const DisclosuresKit = Extension.create({
   name: "disclosuresKit",
