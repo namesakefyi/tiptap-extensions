@@ -3,16 +3,7 @@ import type { JSONContent } from "@tiptap/core";
 import { findChildren } from "@tiptap/core";
 import Document from "@tiptap/extension-document";
 import StarterKit from "@tiptap/starter-kit";
-import {
-  Disclosure,
-  DisclosureContent,
-  DisclosureTitle,
-  Disclosures,
-  StepContent,
-  StepItem,
-  StepTitle,
-  Steps,
-} from "../src";
+import { DisclosuresKit, StepsKit } from "../src";
 
 export const findNodesByType = (editor: Editor, nodeType: string) => {
   return findChildren(editor.state.doc, (node) => node.type.name === nodeType);
@@ -45,14 +36,8 @@ export function newEditor() {
       Document.extend({
         content: "(block | steps)+",
       }),
-      Steps,
-      StepItem,
-      StepTitle,
-      StepContent,
-      Disclosures,
-      Disclosure,
-      DisclosureTitle,
-      DisclosureContent,
+      StepsKit,
+      DisclosuresKit,
     ],
   });
 }

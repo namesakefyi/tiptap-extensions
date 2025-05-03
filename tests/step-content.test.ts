@@ -4,7 +4,6 @@ import {
   getStepContents,
   getStepItems,
   getStepTitles,
-  getSteps,
   newEditor,
 } from "./utils";
 
