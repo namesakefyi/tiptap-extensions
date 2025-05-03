@@ -12,7 +12,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@namesake/tiptap-extensions": "^2.0.0",
+		"@namesake/tiptap-extensions": "^2.0.1",
 		"@tiptap/extension-document": "^2.11.9",
 		"@tiptap/extension-placeholder": "^2.11.9",
 		"@tiptap/pm": "^2.11.9",
