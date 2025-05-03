@@ -1,5 +1,11 @@
 # @namesake/tiptap-extensions
 
+## 2.0.1
+
+### Patch Changes
+
+- fce0015: Fix types exports
+
 ## 2.0.0
 
 ### Major Changes
