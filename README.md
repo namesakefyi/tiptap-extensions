@@ -16,20 +16,15 @@ npm install @namesake/tiptap-extensions
 
 ## `Steps`
 
-There are four required components for steps:
-
-1. `Steps`: The container for an ordered list
-2. `StepItem`: The container for the title and content of a single list item
-3. `StepTitle`: The title for an item
-4. `StepContent`: The contents for an item
+To use steps, import `StepsKit` from `@namesake/tiptap-extensions`.
 
 In order to insert and use steps, one or more nodes within your document need to accept the `"steps"` [content type](https://tiptap.dev/docs/editor/core-concepts/schema#content).
 
 ```tsx
+import { StepsKit } from "@namesake/tiptap-extensions";
+import Document from "@tiptap/extension-document";
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
-import { Steps, StepItem, StepTitle, StepContent } from "@namesake/tiptap-extensions";
-import Document from "@tiptap/extension-document";
 
 const Editor = () => {
   const editor = useEditor({
@@ -42,10 +37,7 @@ const Editor = () => {
         content: "(block | steps)+", 
       }),
       // Pass in the steps extensions
-      Steps,
-      StepItem,
-      StepTitle,
-      StepContent
+      StepsKit
     ],
     content: "Hello world",
   });
@@ -159,10 +151,7 @@ const Editor = () => {
         },
       }),
       // Pass in the steps extensions
-      Steps,
-      StepItem,
-      StepTitle,
-      StepContent
+      StepsKit
     ]
   });
 
@@ -206,28 +195,19 @@ editor.chain().focus().toggleSteps().run()
 
 ## `Disclosures`
 
-There are four required components for disclosures:
-
-1. `Disclosures`: The container for a group of disclosures
-2. `Disclosure`: The container for the title and content of a single disclosure
-3. `DisclosureTitle`: The title for an item, e.g. `<summary>` in HTML
-4. `DisclosureContent`: The contents for an item, e.g. `<details>` in HTML
+To use disclosures, import `DisclosuresKit` from `@namesake/tiptap-extensions`.
 
 ```tsx
+import { DisclosuresKit } from "@namesake/tiptap-extensions";
+import Document from "@tiptap/extension-document";
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
-import { Disclosures, Disclosure, DisclosureTitle, DisclosureContent } from "@namesake/tiptap-extensions";
-import Document from "@tiptap/extension-document";
 
 const Editor = () => {
   const editor = useEditor({
     extensions: [
       StarterKit,
-      // Pass in the disclosure extensions
-      Disclosures,
-      Disclosure,
-      DisclosureTitle,
-      DisclosureContent
+      DisclosuresKit
     ],
     content: "Hello world",
   });

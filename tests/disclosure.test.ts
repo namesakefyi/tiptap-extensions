@@ -1,7 +1,6 @@
 import type { Editor } from "@tiptap/core";
 import { beforeEach, describe, expect, it } from "vitest";
 import {
-  getDisclosureContents,
   getDisclosureGroups,
   getDisclosureItems,
   getDisclosureTitles,

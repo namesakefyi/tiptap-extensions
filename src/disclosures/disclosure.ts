@@ -54,14 +54,6 @@ export const Disclosure = Node.create<DisclosureOptions>({
   defining: false,
   draggable: false,
 
-  addAttributes() {
-    return {
-      open: {
-        default: true,
-      },
-    };
-  },
-
   addOptions() {
     return {
       HTMLAttributes: {},
@@ -82,6 +74,7 @@ export const Disclosure = Node.create<DisclosureOptions>({
       "details",
       mergeAttributes(
         { "data-type": "disclosure" },
+        this.editor?.isEditable ? { open: true } : {},
         this.options.HTMLAttributes,
         HTMLAttributes,
       ),
