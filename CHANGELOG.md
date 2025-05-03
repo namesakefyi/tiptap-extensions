@@ -1,5 +1,16 @@
 # @namesake/tiptap-extensions
 
+## 2.0.0
+
+### Major Changes
+
+- ab845d2: Combine imports into single-import kits
+
+### Patch Changes
+
+- ab845d2: Do not automatically open disclosures when not editing
+- ab845d2: Account for empty selection when toggling between disclosures to prevent deleting unintended tokens
+
 ## 1.0.0
 
 ### Major Changes
