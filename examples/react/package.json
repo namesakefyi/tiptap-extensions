@@ -12,7 +12,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@namesakefyi/tiptap-extensions": "file:../../",
+		"@namesake/tiptap-extensions": "^2.0.0",
 		"@tiptap/extension-document": "^2.11.9",
 		"@tiptap/extension-placeholder": "^2.11.9",
 		"@tiptap/pm": "^2.11.9",
@@ -23,7 +23,7 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.22.0",
-		"@namesakefyi/tiptap-extensions": "file:../../",
+		"@namesake/tiptap-extensions": "file:../../",
 		"@types/react": "^19.0.10",
 		"@types/react-dom": "^19.0.4",
 		"@vitejs/plugin-react": "^4.3.4",

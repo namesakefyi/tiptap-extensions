@@ -1,4 +1,4 @@
-import { StepsKit, DisclosuresKit } from '../../../';
+import { StepsKit, DisclosuresKit } from '@namesake/tiptap-extensions';
 import { EditorProvider, useCurrentEditor } from '@tiptap/react';
 import Document from '@tiptap/extension-document';
 import Placeholder from '@tiptap/extension-placeholder';
