@@ -1,6 +1,6 @@
 {
   "name": "@namesake/tiptap-extensions",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Extensions for Tiptap",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -33,7 +33,9 @@
     "prosemirror"
   ],
   "author": "Eva Decker",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
