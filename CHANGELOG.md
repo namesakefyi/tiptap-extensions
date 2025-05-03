@@ -1,4 +1,4 @@
-# @namesakefyi/tiptap-extensions
+# @namesake/tiptap-extensions
 
 ## 1.0.0
 

@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@namesakefyi/tiptap-extensions':
+      '@namesake/tiptap-extensions':
         specifier: file:../../
-        version: '@namesake/tiptap-extensions@file:../..(@tiptap/core@2.11.9(@tiptap/pm@2.11.9))'
+        version: file:../..(@tiptap/core@2.11.9(@tiptap/pm@2.11.9))
       '@tiptap/extension-document':
         specifier: ^2.11.9
         version: 2.11.9(@tiptap/core@2.11.9(@tiptap/pm@2.11.9))

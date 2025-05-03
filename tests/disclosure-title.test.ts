@@ -1,4 +1,3 @@
-import type { Editor } from "@tiptap/core";
 import { describe, expect, it } from "vitest";
 import {
   createBasicDisclosure,

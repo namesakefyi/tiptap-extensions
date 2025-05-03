@@ -128,7 +128,13 @@ export const Disclosures = Node.create<DisclosuresOptions>({
             }
           }
 
-          // If there is not parent disclosure group container, create disclosure group
+          // If no content is selected, just insert a blank disclosure
+          // Subtract 2 for start and end tokens
+          if (slice.content.size - 2 <= 0) {
+            return chainCommand().insertDisclosure().run();
+          }
+
+          // Otherwise, attempt to insert the selected content as a disclosure
           let titleToInsert = "";
           let contentToInsert: JSONContent[] = [];
 
