@@ -5,8 +5,8 @@ import {
   createParagraph,
   getStepContents,
   getStepItems,
-  getStepTitles,
   getSteps,
+  getStepTitles,
   newEditor,
 } from "./utils";
 

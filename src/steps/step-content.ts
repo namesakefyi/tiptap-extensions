@@ -1,4 +1,4 @@
-import { Node, findParentNode, mergeAttributes } from "@tiptap/core";
+import { findParentNode, mergeAttributes, Node } from "@tiptap/core";
 
 export interface StepContentOptions {
   HTMLAttributes: Record<string, string>;

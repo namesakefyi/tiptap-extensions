@@ -1,6 +1,6 @@
 import type { Editor } from "@tiptap/core";
 import { beforeEach, describe, expect, it } from "vitest";
-import { getStepItems, getStepTitles, getSteps, newEditor } from "./utils";
+import { getStepItems, getSteps, getStepTitles, newEditor } from "./utils";
 
 describe("StepItem", () => {
   let editor: Editor;

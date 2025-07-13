@@ -1,8 +1,8 @@
 import {
-  type JSONContent,
-  Node,
   findParentNode,
+  type JSONContent,
   mergeAttributes,
+  Node,
 } from "@tiptap/core";
 import { TextSelection } from "@tiptap/pm/state";
 import { joinListBackwards, joinListForwards } from "../helpers";

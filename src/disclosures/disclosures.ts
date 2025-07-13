@@ -1,9 +1,9 @@
 import {
-  type JSONContent,
-  Node,
   findChildren,
   findParentNode,
+  type JSONContent,
   mergeAttributes,
+  Node,
 } from "@tiptap/core";
 
 const ALLOWED_TITLE_TYPES = ["paragraph", "heading"];

@@ -1,11 +1,10 @@
-import type { Editor } from "@tiptap/core";
 import { describe, expect, it } from "vitest";
 import {
   createBasicStep,
   getStepContents,
   getStepItems,
-  getStepTitles,
   getSteps,
+  getStepTitles,
   newEditor,
 } from "./utils";
 
@@ -104,7 +103,7 @@ describe("StepTitle", () => {
     editor.commands.insertContent("Step 2 content");
 
     // Focus at the start of the second step title
-    const stepItems = getStepItems(editor);
+    getStepItems(editor);
     const secondStepTitle = getStepTitles(editor)[1];
     editor.commands.focus(secondStepTitle.pos);
 
