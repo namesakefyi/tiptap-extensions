@@ -1,5 +1,11 @@
 # @namesake/tiptap-extensions
 
+## 3.0.1
+
+### Patch Changes
+
+- e016abb: Fix peer dependency for Tiptap
+
 ## 3.0.0
 
 ### Major Changes
