@@ -1,6 +1,5 @@
-import { Editor } from "@tiptap/core";
 import type { JSONContent } from "@tiptap/core";
-import { findChildren } from "@tiptap/core";
+import { Editor, findChildren } from "@tiptap/core";
 import Document from "@tiptap/extension-document";
 import StarterKit from "@tiptap/starter-kit";
 import { DisclosuresKit, StepsKit } from "../src";

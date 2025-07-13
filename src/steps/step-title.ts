@@ -1,9 +1,4 @@
-import {
-  Node,
-  type NodeConfig,
-  findParentNode,
-  mergeAttributes,
-} from "@tiptap/core";
+import { findParentNode, mergeAttributes, Node } from "@tiptap/core";
 
 export interface StepTitleOptions {
   HTMLAttributes: Record<string, any>;

@@ -108,7 +108,7 @@ describe("DisclosureTitle", () => {
     editor.commands.insertContent("Disclosure 2 content");
 
     // Focus at the start of the second disclosure title
-    const disclosureItems = getDisclosureItems(editor);
+    getDisclosureItems(editor);
     const secondDisclosureTitle = getDisclosureTitles(editor)[1];
     editor.commands.focus(secondDisclosureTitle.pos);
 
