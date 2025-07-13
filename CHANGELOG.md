@@ -1,5 +1,11 @@
 # @namesake/tiptap-extensions
 
+## 3.0.0
+
+### Major Changes
+
+- fe768a2: Upgrade to Tiptap 3
+
 ## 2.0.1
 
 ### Patch Changes
