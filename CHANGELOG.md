@@ -1,5 +1,11 @@
 # @namesake/tiptap-extensions
 
+## 3.0.2
+
+### Patch Changes
+
+- ca8eaeb: Bump linkifyjs package to address vulnerability
+
 ## 3.0.1
 
 ### Patch Changes
