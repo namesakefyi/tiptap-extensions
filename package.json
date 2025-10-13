@@ -38,7 +38,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@biomejs/biome": "2.2.5",
+    "@biomejs/biome": "2.2.6",
     "@changesets/cli": "^2.29.5",
     "@tiptap/core": "^3.0.1",
     "@tiptap/extension-document": "^3.0.1",
